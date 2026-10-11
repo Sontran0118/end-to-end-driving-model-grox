@@ -22,11 +22,21 @@ UNKNOWN, FREE, OCC = 0, 1, 2
 @dataclass(frozen=True)
 class Grid:
     occ:    np.ndarray   # uint8  [X, Y, Z]      {UNKNOWN, FREE, OCC}
-    origin: np.ndarray   # float32 [3]           world coords of corner of voxel [0,0,0]
+    origin: np.ndarray   # float32 [3]           rig-frame corner of voxel [0,0,0], metres
     voxel:  float                                # edge length, metres
     sem:    np.ndarray | None = None   # uint8   [X, Y, Z]  class id, 0 = none
     flow:   np.ndarray | None = None   # float16 [X, Y, 2]  BEV velocity m/s
+    pose:   np.ndarray | None = None   # float32 [4, 4]     rig -> anchor at this keyframe
 ```
+
+**The grid is ego-frame at keyframe time**, not world-frame. It is pinned to the car — which
+is why forward starts at 0 (straight off the bumper) and lateral is symmetric. `origin` is
+therefore in rig coordinates, and is the same constant for every sample.
+
+`pose` places that ego-frame grid into the shared `anchor` world frame. The **model never
+sees it** — it is metadata, used by the viewer to check temporal consistency (do two
+consecutive grids agree about the same building?) and by any later multi-frame accumulation.
+Optional: a single grid renders fine without it.
 
 **Axes: X forward, Y left, Z up** (rig FLU, matching `sensor_extrinsics`). Index order is
 `occ[ix, iy, iz]`.

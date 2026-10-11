@@ -1,0 +1,51 @@
+clip_id,chunk,split,platform_class,country,month,hour_of_day,lidar_top_360fov,camera_front_wide_120fov,egomotion,camera_intrinsics.offline,sensor_extrinsics.offline
+0c3e9b08-a302-48d6-9884-1d27cba46b3a,2246,test,hyperion_8,United States,5,17,True,True,True,True,True
+49eb6e65-d2ce-474e-ba5d-53341f6f4904,2246,test,hyperion_8,United States,12,10,True,True,True,True,True
+49fd3549-db7a-4b4c-a5a8-31e06af9526f,2246,test,hyperion_8,United States,2,18,True,True,True,True,True
+6255aff8-87d1-4001-a2d0-8829f554dca6,2246,test,hyperion_8,United States,2,16,True,True,True,True,True
+a0baaf62-dc89-4df5-9e5b-0960041b629e,2246,test,hyperion_8,United States,5,14,True,True,True,True,True
+cc8ddec7-1255-4ed1-8df2-2ecc48710423,2246,test,hyperion_8,United States,7,17,True,True,True,True,True
+cd2713a1-4387-4634-836c-b795f82e11d7,2246,test,hyperion_8,United States,10,10,True,True,True,True,True
+e34d516e-3ee9-4806-b013-27929f30b348,2246,test,hyperion_8,United States,3,11,True,True,True,True,True
+024ccbb3-879d-45ae-81ce-2e4667823757,41,train,hyperion_8,United States,1,0,True,True,True,True,True
+04122087-9cb3-4227-af37-3523785c6a7f,41,train,hyperion_8,United States,8,11,True,True,True,True,True
+0989f9e3-af28-4755-8f56-48bcca724bbc,41,train,hyperion_8,United States,4,7,True,True,True,True,True
+11f10342-cf67-4736-9345-e7b16593518b,41,train,hyperion_8,United States,8,9,True,True,True,True,True
+13ae70ee-2eab-4e9e-aed9-1a84a07559c4,41,train,hyperion_8,United States,10,12,True,True,True,True,True
+19869edd-a28e-4d28-a16b-f3b5c8e2a50d,41,train,hyperion_8,United States,7,22,True,True,True,True,True
+1a2bac69-6c2a-489d-aa88-a363b1e3f252,41,train,hyperion_8,United States,9,15,True,True,True,True,True
+21fc4c2f-f2dd-428c-8ed9-e14094e79fe1,41,train,hyperion_8,United States,5,10,True,True,True,True,True
+2c95e984-acac-4c16-9f6b-7afd00e2ec0f,41,train,hyperion_8,United States,11,15,True,True,True,True,True
+4aeace93-b60f-409a-8e0e-db7cd5842651,41,train,hyperion_8,United States,4,12,True,True,True,True,True
+538c10ec-1898-40a0-ab16-f711193eb811,41,train,hyperion_8,United States,12,23,True,True,True,True,True
+566d1282-c208-4dcb-91d6-1661866956d9,41,train,hyperion_8,United States,5,9,True,True,True,True,True
+66bf35b4-4e39-4141-b788-7c9f1f83f937,41,train,hyperion_8,United States,9,8,True,True,True,True,True
+6cdf6334-4da4-4fc8-bf37-88d7d16167e9,41,train,hyperion_8,United States,1,17,True,True,True,True,True
+6e166e8a-d528-4ff5-ad32-c79bcb6feb0d,41,train,hyperion_8,United States,11,10,True,True,True,True,True
+76c29ffc-0e87-4ed3-908d-f56c546ab071,41,train,hyperion_8,United States,3,17,True,True,True,True,True
+82295b98-1243-4159-b736-2ddd223ba60a,41,train,hyperion_8,United States,8,9,True,True,True,True,True
+83de4307-8cd0-491e-afdf-0f82aaf328dd,41,train,hyperion_8,United States,7,10,True,True,True,True,True
+86b38d5c-8ba1-4a62-bc03-7f19b6e3030a,41,train,hyperion_8,United States,1,9,True,True,True,True,True
+886bf483-6cad-4671-b14e-3114b0070a13,41,train,hyperion_8,United States,1,15,True,True,True,True,True
+8fb3b3dc-d73d-4e75-9703-a33682f0dba9,41,train,hyperion_8,United States,9,18,True,True,True,True,True
+9247f0a0-e402-40c6-9858-be4574529485,41,train,hyperion_8,United States,12,11,True,True,True,True,True
+942b21c3-3353-4da2-8157-c48eeee01dc2,41,train,hyperion_8,United States,11,7,True,True,True,True,True
+9abb621a-751e-4dab-bc1c-885ee217d28c,41,train,hyperion_8,United States,4,9,True,True,True,True,True
+a2930bf9-f33c-4ae1-9f78-9b868cd60856,41,train,hyperion_8,United States,1,0,True,True,True,True,True
+a2de5d17-eef6-4a29-8cbd-fd8eedf4d31d,41,train,hyperion_8,United States,4,13,True,True,True,True,True
+b5d8dc43-bd3d-4826-9fbe-2f6840639f94,41,train,hyperion_8,United States,8,17,True,True,True,True,True
+ba0b5b34-beed-4054-ad06-322db93ac415,41,train,hyperion_8,United States,4,9,True,True,True,True,True
+bb9c8f90-a431-4825-9c8d-1639cc0d5635,41,train,hyperion_8,United States,5,8,True,True,True,True,True
+bedd90e6-35b1-47c1-9f83-d21a5f4fc2b3,41,train,hyperion_8,United States,4,11,True,True,True,True,True
+cf6336a4-4e83-411d-a15c-3ef2086e2077,41,train,hyperion_8,United States,1,22,True,True,True,True,True
+d3780b4c-1fec-4783-b68b-4b540ef09746,41,train,hyperion_8,United States,8,8,True,True,True,True,True
+d65c0767-6efa-4d04-8b8c-9dd6347b0fc1,41,train,hyperion_8,United States,9,15,True,True,True,True,True
+f262312d-c018-4aa4-8e1d-cd87b12955aa,41,train,hyperion_8,United States,1,18,True,True,True,True,True
+f465b4fd-a731-4c40-82d3-4c7810fa7fd1,41,train,hyperion_8,United States,5,10,True,True,True,True,True
+3705244d-e829-493e-93b7-3df5200b7d0e,2107,val,hyperion_8,Germany,1,11,True,True,True,True,True
+3b95034c-251c-4d0c-b32b-d4624528b064,2107,val,hyperion_8,Germany,12,14,True,True,True,True,True
+687f4613-9577-41e1-8226-6226c69ee022,2107,val,hyperion_8,Germany,9,17,True,True,True,True,True
+71a14071-6c71-4c93-9cea-67528291dfbf,2107,val,hyperion_8,Germany,7,18,True,True,True,True,True
+7ae77bdb-c448-4ee7-be50-22442f96fa4f,2107,val,hyperion_8,Germany,4,19,True,True,True,True,True
+9b79338b-caf1-47b1-925d-c107396b6543,2107,val,hyperion_8,Germany,10,17,True,True,True,True,True
+fb8c7620-dc04-4650-9c28-20930da017ac,2107,val,hyperion_8,Germany,3,21,True,True,True,True,True

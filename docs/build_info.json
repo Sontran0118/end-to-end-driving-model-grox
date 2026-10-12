@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "script": "reconstructed",
+      "status": "reconstructed",
+      "git_commit": "11d7e0180da7c3acac8243fa1b940b4a1c33cf97",
+      "date": "2026-10-12T18:43:07.3334195-04:00",
+      "VOXEL": 0.4,
+      "SHAPE": [200, 100, 16],
+      "ORIGIN": [0.0, -20.0, -1.0],
+      "OWN_VEHICLE_MARGIN": 0.2,
+      "HFOV": 120.0,
+      "history_offsets": [-5, -10, -15],
+      "K": [[369.5041722813606, 0.0, 640.0], [0.0, 369.5041722813606, 192.0], [0.0, 0.0, 1.0]],
+      "library_versions": {
+        "physical_ai_av": "0.2.2",
+        "huggingface_hub": "2.2.0",
+        "pandas": "3.0.6",
+        "pyarrow": "26.0.0",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "opencv-python": "5.0.0.93",
+        "matplotlib": "3.11.2",
+        "ipykernel": "7.4.0",
+        "DracoPy": "2.2.0"
+      },
+      "dataset_revision": "33f9bf447ed3bcb7d545ce13f4226f824214fafb"
+    }
+  ]
+}

@@ -20,6 +20,7 @@ import pandas as pd
 
 from physical_ai_av.dataset import Features
 from physical_ai_av.video import SeekVideoReader
+from build_info import append_build_info
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -227,6 +228,7 @@ def main() -> None:
     if args.clip:
         row = clips.loc[clips.clip_id == args.clip].iloc[0]
         result = process_clip(row, features, matches)
+        append_build_info("tools/rectify_camera.py")
         print(json.dumps(result, indent=2))
         return
 
@@ -270,6 +272,7 @@ def main() -> None:
         "verification": verification,
     }
     (PROCESSED / "rectification_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    append_build_info("tools/rectify_camera.py")
     print(json.dumps(report, indent=2))
 
 

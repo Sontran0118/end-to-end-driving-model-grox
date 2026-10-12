@@ -29,6 +29,7 @@ from lidar_alignment import (
     read_member,
     vectorized_anchor_poses,
 )
+from build_info import append_build_info
 from occgrid import Grid, FREE, OCC, UNKNOWN
 from transforms import interpolate_anchor_from_ego, lidar_to_ego_transform
 
@@ -230,6 +231,7 @@ def main() -> None:
                 plot_diagnostic(record.to_dict(), dims, features, matches, labels_root, f"{name}_rank{rank}")
         print(json.dumps({"n_occ_min": int(manifest.n_occ.min()), "n_occ_median": float(manifest.n_occ.median()),
                           "n_occ_max": int(manifest.n_occ.max()), "bytes": sum(p.stat().st_size for p in labels_root.rglob("*.npz"))}))
+        append_build_info("tools/build_labels.py")
         return
     new_rows = []
     for _, row in selected.iterrows():
@@ -260,6 +262,7 @@ def main() -> None:
                 plot_diagnostic(record.to_dict(), dims, features, matches, labels_root, f"{name}_rank{rank}")
         print(json.dumps({"n_occ_min": int(manifest.n_occ.min()), "n_occ_median": float(manifest.n_occ.median()),
                           "n_occ_max": int(manifest.n_occ.max()), "bytes": sum(p.stat().st_size for p in labels_root.rglob("*.npz"))}))
+    append_build_info("tools/build_labels.py")
 
 
 if __name__ == "__main__":

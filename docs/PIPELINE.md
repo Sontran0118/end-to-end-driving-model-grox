@@ -26,7 +26,8 @@ selected clips -> keyframes + camera matches -> rectified photos
 | 3. Camera preparation | `tools/rectify_camera.py`, `tools/make_contact_sheet.py` | camera video, timestamps, offline intrinsics, matches | rectified JPEGs, per-clip K JSON, rectification reports and contact sheet |
 | 4. Coordinate and alignment checks | `tools/transforms.py`, `tools/test_transforms.py`, `tools/lidar_alignment.py`, `tools/overlay_checks.py`, `tools/timing_check.py` | calibration, egomotion, LiDAR, rectified photos | transform tests and review overlays under `outputs/` |
 | 5. Vehicle-box proposal | `tools/vehicle_box_proposal.py` | vehicle dimensions, LiDAR, extrinsics | proposal plots and inside/shell counts |
-| 6. Occupancy labels and QA | `tools/build_labels.py`, `tools/labels_check.py`, `tools/labels_qa.py` | keyframes, matches, LiDAR, egomotion, calibration, vehicle dimensions | `data/labels/`, label manifest, QA plots/contact sheet |
+| 6. Occupancy labels and QA | `tools/build_labels.py`, `tools/labels_check.py`, `tools/labels_qa.py`, `tools/show_sample.py`, `tools/golden_check.py` | keyframes, matches, LiDAR, egomotion, calibration, vehicle dimensions | `data/labels/`, label manifest, QA plots/contact sheet, sample figure, golden-check result |
+| Reproducibility metadata | `tools/build_info.py` (called by label/rectification runs) | current constants, Git metadata, installed package metadata, raw download manifest | append-only `docs/build_info.json` |
 
 ## Conventions
 
@@ -87,7 +88,11 @@ python tools/build_labels.py
 python tools/labels_check.py
 python tools/labels_qa.py
 python tools/make_contact_sheet.py
+python tools/show_sample.py 49eb6e65 15
+python tools/golden_check.py
 ```
+
+`tools/build_info.py` has no standalone command: successful `build_labels.py` and `rectify_camera.py` runs append entries to `docs/build_info.json`. The initial entry is marked `reconstructed`; later entries record `executed` runs.
 
 The first command requires the dataset license and Hugging Face authentication; never place the token in a file or command transcript. The scripts assume the project dependencies and local devkit are already installed. The precise installation command/version set is **UNVERIFIED from these scripts**; use the project setup instructions rather than guessing a version.
 
